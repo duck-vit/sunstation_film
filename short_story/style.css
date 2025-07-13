@@ -1,0 +1,56 @@
+#header_btn_short_story {
+    background-color: #785df3;
+}
+
+#nav_btn_short_story {
+    background-color: #069cfd;
+}
+
+.short_story_box {
+    width: 358px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px 20px 35px 0px;
+}
+
+.short_story_items {
+    width: 358px;
+    cursor: pointer;
+    height: 204.4px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border: 2px solid #c8bfe7;
+}
+
+.short_story_box:hover .short_story_items {
+    filter: brightness(70%);
+    transition: 0.3s;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000000;
+}
+
+.short_story_box:hover h2 {
+    color: #785df3;
+    transition: 0.3s;
+}
+
+h3 {
+    color: black;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.short_story_box:hover h3 {
+    font-weight: 600;
+}
+
+
+.margin_height {
+    height: 45px;
+}
