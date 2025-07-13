@@ -1,0 +1,73 @@
+#header_btn_film {
+    background-color: #785df3;
+}
+
+#nav_btn_film {
+    background-color: #069cfd;
+}
+
+.film_box {
+    width: 22%;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px 20px 35px 0px;
+}
+
+.film_items {
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid #c8bfe7;
+}
+
+.film_box:hover .film_items {
+    filter: brightness(70%);
+    transition: 0.3s;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000000;
+}
+
+.film_box:hover h2 {
+    color: #785df3;
+    transition: 0.3s;
+}
+
+h3 {
+    color: black;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.film_box:hover h3 {
+    font-weight: 600;
+}
+
+
+.margin_height {
+    height: 45px;
+}
+
+
+
+
+
+@media only screen and (max-width: 901px) {
+    .film_box {
+        width: 222px;
+    }
+}
+@media only screen and (max-width: 869px) {
+    .film_box {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 557px) {
+    .film_box {
+        width: 95%;
+    }
+}
