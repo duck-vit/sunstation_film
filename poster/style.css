@@ -1,0 +1,36 @@
+#header_btn_poster {
+    background-color: #785df3;
+}
+
+#nav_btn_poster {
+    background-color: #069cfd;
+}
+
+.poster_box,
+.poster_items {
+    height: 300px;
+}
+
+.poster_box {
+    margin: 0px 20px 35px 0px;
+    display: inline-block;
+}
+
+.poster_items {
+    cursor: pointer;
+    border: 2px solid #c8bfe7;
+}
+
+.poster_box:hover .poster_items {
+    filter: brightness(70%);
+    transition: 0.3s;
+}
+
+.poster_box:hover h2 {
+    color: #785df3;
+    transition: 0.3s;
+}
+
+.poster_box:hover h3 {
+    font-weight: 600;
+}
