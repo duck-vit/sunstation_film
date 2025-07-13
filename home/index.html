@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn.glitch.global/3edde98c-58e0-4616-93ed-9cbe79eddb63/Sun_Station_s_Film_Logo-removebg-preview.png?v=1654090397891">
+    <title>Home | Film Của Sun Station</title>
+
+    <!-- Shared File -->
+    <link rel="stylesheet" href="/sunstation_film/file_manage/style.css">
+
+    <!-- Main File -->
+    <link rel="stylesheet" href="/sunstation_film/home/style.css">
+    <link rel="stylesheet" href="/sunstation_film/home/search_box/style.css">
+
+    <!-- Shared Setting Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font for Header and Footer -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito&family=Open+Sans:ital@1&family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Google Font for Container -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Prompt:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap" rel="stylesheet">
+    
+</head>
+  
+<style>
+/* @media only screen and (max-width: 1155px) {
+    html {
+        padding: 0px 0px 0px 5%;
+    }
+    header {
+        padding: 0px 30px 0px 10px;
+    }
+    #navigation {
+        display: none;
+    }
+    header #header_item_navigation .header_items {
+        font-size: 20px;
+        padding: 0px 25px;
+    }
+}
+@media only screen and (max-width: 901px) {
+    .poster_box,
+    .poster_items {
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 869px) {
+    header {
+        text-align: center;
+    }
+    header #header_item_navigation {
+        float: none;
+    }
+    #header_logo_title {
+        display: none;
+    }
+    .poster_box {
+          width: 45%;
+    }
+}
+@media only screen and (max-width: 596px) {
+  header {
+      padding: 0px;
+  }
+    header #header_logo_web {
+        display: none;
+    }
+}
+@media only screen and (max-width: 557px) {
+    header #header_item_navigation .header_items {
+        font-size: 15px;
+        padding: 0px 13px;
+    }
+  .poster_box {
+      width: 95%;
+  }
+  h2 {
+      font-size: 25px;
+  }
+  h3 {
+      font-size: 20px;
+  }
+} */
+  
+#iframe_video {
+    width: 358px;
+    height: 204.39px;
+/*     position: absolute;
+    left: 0; */
+    display: inline-block;
+    text-decoration: none;
+/*     margin: 0px 20px 35px calc(var(--width-nav) + 30px); */
+}
+  
+.video_notif {
+		height: 200px;
+    display: block;
+    margin-top: 15px;
+}
+</style>
+  
+<body>
+    <header>
+        <div class="logo_web" id="header_logo_web">
+            <a href="/sunstation_film/home">
+                <img src="https://cdn.glitch.global/3edde98c-58e0-4616-93ed-9cbe79eddb63/Sun%20Station's%20Film%20Logo.jpg?v=1653963342811">
+            </a>
+            <div id="header_logo_title">
+                <div id="header_main_logo_title">Sun Station's Film</div>
+                <div id="header_bottom_logo_title">Film của Sun Station</div>
+            </div>
+        </div>
+
+        <div id="header_item_navigation">
+            <div class="header_items" id="header_btn_home">Trang Chủ</div>
+            <div class="header_items" id="header_btn_film">Phim</div>
+            <div class="header_items" id="header_btn_short_story">Truyện ngắn</div>
+            <div class="header_items" id="header_btn_video">Video</div>
+        </div>
+    </header>
+
+    <div id="navigation">
+        <div class="nav_items" id="nav_btn_home">Trang Chủ</div>
+        <div class="nav_items" id="nav_btn_film">Phim</div>
+        <div class="nav_items" id="nav_btn_short_story">Truyện ngắn</div>
+        <div class="nav_items" id="nav_btn_video">Video</div>
+        <div class="nav_items" id="nav_btn_poster">Poster</div>
+        <div class="nav_line"></div>
+    </div>
+
+    <div id="container" class="container">
+        <div id="search_box">
+            <input placeholder="Tìm kiếm Video..." type="search" id="input">
+            <div id="div-search_btn">
+                <img src="https://cdn.glitch.global/3edde98c-58e0-4616-93ed-9cbe79eddb63/c5a24699-524e-4feb-9d20-2764ce7f1dda.image.png?v=1654938599131" id="search_btn">                
+            </div>
+            <img src="https://cdn.glitch.global/3edde98c-58e0-4616-93ed-9cbe79eddb63/png-clipart-computer-icons-arrow-down-angle-rectangle.png?v=1654941355757" id="btn_hide_search_content">
+        </div>
+        <img src="https://cdn.glitch.global/3edde98c-58e0-4616-93ed-9cbe79eddb63/png-clipart-computer-icons-arrow-down-angle-rectangle.png?v=1654941355757" id="btn_show_search_content">
+
+        <h1>Video mới nhất:</h1>
+        <a href="video/video_page/chuyến_đi_ninh_bình" title="Chuyến đi Ninh Bình" class="featured_video_box">
+<!--             <img src="https://cdn.glitch.global/1bb2f326-b435-4269-9e9b-e9e8eae17ea6/thumbnail%20du%20l%E1%BB%8Bch%20nha%20trang%20video%202%20t%E1%BA%ADp%202.png?v=1667744437152" class="featured_video_items"> -->
+            <iframe id="iframe_video" src="https://www.youtube.com/embed/lcTWCubrTR8" title="Chuyến đi Ninh Bình | SUN STATION" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Chuyến đi Ninh Bình</h2>
+            <h3>1 Video</h3>
+            <a href="video" class="video_view_in"><span>Xem trong trang Video</span></a>
+        </a>
+      
+      	<div class="margin_height"></div>
+      
+      	<h1>Thông báo mới nhất:</h1>
+<!--         <p style="color: red">Chưa có thông báo!</p> -->
+        <p style="display:inline-block">Đoạn phim thuộc tập 3 của <b>Dũng cảm lên! PoPo!</b> đã được mình tìm và dựng lại sau hơn 2 năm thất lạc sẽ được bổ sung vào bản phim chính thức.
+          	
+          	<video class="video_notif" controls="">
+            		<source src="https://cdn.glitch.me/1bb2f326-b435-4269-9e9b-e9e8eae17ea6/0226(1).mp4?v=1677411783525">
+        		</video>
+<!--             <p style="color:red;display:inline-block">100%</p>
+            <p style="display:inline-block"> | Đã phát hành!</p> -->
+          	<br>
+          	Bổ sung vào mạch phim (Đoạn cần bổ sung bắt đầu từ 0:49 đến 1:25):
+          	<video class="video_notif" controls="">
+            		<source src="https://cdn.glitch.me/1bb2f326-b435-4269-9e9b-e9e8eae17ea6/0226.mp4?v=1677410383009">
+        		</video>
+        </p>
+				
+        <div class="margin_height"></div>
+        <h1>Giới thiệu Web</h1>
+        <p>Vì trang Video và phim trên <a style="color:black;" href="https://tabby-eager-quark.glitch.me">Website Chính</a> của chúng mình không thể chứa nổi những dự án Video của chúng mình nên mình phải chuyển tất cả dự án Video sang một trang mới là Web này. Đang trong quá trình hoàn thiện và đã bắt đầu đi vào hoạt động. Ban đầu, mình định chỉ đăng những bộ phim lên Website này thôi nhưng vì thấy chỉ có mình phim không thì hơi bỏ phí diện tích Web nên mình làm thêm 2 trang nữa trên thanh Điều Hướng là Truyện Ngắn và Video. Trang Truyện Ngắn thì chuyên đăng những mẩu chuyện ngắn đã làm thành video của chúng mình, còn trang Video thì đăng những video nổi bật nhất trên kênh. Thường thường thì những dự án mới chúng mình đều đăng trên trang này.</p><br>
+        <p>Các bạn có thể tìm trên trang Web này những video trên kênh nhưng được chúng mình đăng trên các nền tảng khác; các phiên bản video hoặc là những bật mí hậu trường khi quay của chúng mình mà không được đề cập đến trên kênh Youtube chính.</p><br>
+        <p>Về việc trang Video chỉ xuất hiện trên thanh Điều Hướng của Trang Chủ. Đây không phải là lỗi mà là chủ đích của mình. Những Truyện Ngắn, Phim thì cần có poster hoặc hình ảnh đại diện cho Video, còn video thì không hẳn. Mình chỉ cho các bạn thấy trang Poster xuất hiện trên 2 trang Truyện Ngắn và Phim là vì thế. Với lại mục đích chính của mình khi làm Website này là để nó chứa những video có cốt truyện. Đăng Video không có cốt truyện chỉ là mục đích phụ, giúp cho chúng mình có thể cập nhật được những video nổi bật nhất trên kênh.</p><br>
+        <p>Mình cũng mới làm thêm trang TikTok, chuyên đăng những video trên kênh TikTok của chúng mình, chỉ mới hoàn thiện có chút xíu nhưng các bạn ghé thăm nhé!</p>
+    </div>
+</body>
+<script src="/sunstation_film/file_manage/main.js"></script>
+<script src="/sunstation_film/location_page/location_video.js"></script>
+<script src="/sunstation_film/location_page/location_short_story.js"></script>
+<script src="/sunstation_film/location_page/location_poster.js"></script>
+<script src="/sunstation_film/home/main.js"></script>
+</html>
